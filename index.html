@@ -1,0 +1,41 @@
+<!doctype HTML>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <div class="container">
+                <form>
+                    <input type="text" id="input" placeholder="Input here:">
+                    <input type="text" id="result" placeholder="Result:">
+                        <div class="number_keys">
+                            <button type="button" onclick="add_number('1')">1</button>
+                            <button type="button" onclick="add_number('2')">2</button>
+                            <button type="button" onclick="add_number('3')">3</button><br>
+                            <button type="button" onclick="add_number('4')">4</button>
+                            <button type="button" onclick="add_number('5')">5</button>
+                            <button type="button" onclick="add_number('6')">6</button><br>
+                            <button type="button" onclick="add_number('7')">7</button>
+                            <button type="button" onclick="add_number('8')">8</button>
+                            <button type="button" onclick="add_number('9')">9</button><br>
+                            <button type="button" onClick="calculator()">=</button>
+                            <button type="button" onclick="add_number('0')">0</button>
+                            <button type="button" onclick="add_number('.')">.</button>
+                        </div>
+                        <div class="operator_keys">
+                            <button type="button" id="add" onclick="add_operator('+');">+</button>
+                            <button type="button" id="add" onclick="add_operator('-');">-</button><br>
+                            <button type="button" id="add" onclick="add_operator('*');">*</button>
+                            <button type="button" id="add" onclick="add_operator('/');">/</button><br>
+                            
+                            <button type="button" onclick="reset_calculator()">C</button>
+                        </div>
+                </form>
+        <div>
+            <p id="error"></p>
+        </div>
+        </div>
+    </body>
+</html>

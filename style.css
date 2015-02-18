@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+form {
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    background-color: lightgray; 
+    padding: 3% 0%; 
+}
+
+button{
+    width: 20%;
+    height: auto;
+}
+#input, #result {
+    display: block;
+    text-align: center; 
+    margin: auto; 
+    width: 60%;
+    height: auto; 
+}
